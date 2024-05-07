@@ -12,3 +12,9 @@
     - Also, while cloning, choose: "Generate new MAC addresses..."
 
 - BB and DB setup notes inside `serverA` directory
+
+### apache and phpbb setup
+
+- https://reintech.io/blog/installing-configuring-phpbb-ubuntu-2004
+    - We are supposed to use postgres instead, check next link
+- https://dlbk.medium.com/how-to-install-apache-php-postgresql-lapp-on-ubuntu-16-04-adb00042c45d
