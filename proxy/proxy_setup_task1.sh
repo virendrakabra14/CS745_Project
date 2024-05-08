@@ -8,6 +8,8 @@ proxy_ip="192.168.100.8"
 
 sysctl -w net.ipv4.ip_forward=1 # allow forwarding
 
+# use -D instead of -A to remove these rules
+
 # for TCP packets from browser_ip to proxy_ip:8080, change destination to server_ip:8080
 iptables -t nat -A PREROUTING -s $browser_ip -d $proxy_ip -p tcp --dport 8080 -j DNAT --to-destination $server_ip:8080
 # for TCP packets from browser_ip to server_ip:8080 (done by prerouting rule!), change source to proxy_ip

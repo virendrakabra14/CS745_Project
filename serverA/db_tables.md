@@ -1,3 +1,4 @@
+```
 $ sudo -u postgres -i
 $ psql
 
@@ -17,3 +18,4 @@ CREATE TABLE users (
     username VARCHAR(50) UNIQUE,
     password VARCHAR(255)
 );
+```
